@@ -29,6 +29,21 @@ button {
     cursor: pointer;
 }
 
+/* ======================== */
+/* допоміжний клас, для центрування і обмеження контенту по ширині */
+/* ======================== */
+
+.container {
+    width: 1158px;
+    margin: 0 auto;    
+    padding: 0 15px;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 :root {
     --iris-primary-brand: #4D5AE5;
     --ocean-pressed-state: #404BBF;
@@ -47,6 +62,10 @@ button {
     --dairy-modal-background: #FCFCFC;
 }
 
+/* ======================== */
+/* -- клас для скрытия -- */
+/* ======================== */
+
 .shadow {
     position: absolute;
     white-space: nowrap;
@@ -59,7 +78,10 @@ button {
     clip-path: inset(50%);
     margin: -1px;
 }
-/* index */
+
+/* ======================== */
+/* ------ index.html -------*/
+/* ======================== */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -74,6 +96,13 @@ body {
 
 .hat{
     border-bottom: 1px solid var(--cornflower-accent);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+}
+
+.hat-nav{
+    display: flex;
 }
 
 .logo {
@@ -90,7 +119,14 @@ body {
     color: var(--navy-blue-dark);
 }
 
-.nav {}
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+    margin-left: 76px;
+}
 
 .main-nav {
     font-weight: 500;
@@ -106,7 +142,14 @@ body {
 }
 
 .contact {
+    margin-left: 332px;
     font-style: normal;
+
+}
+
+.contact-list {
+    display: flex;
+    gap: 40px;
 }
 
 .contact-paragraph {
@@ -120,23 +163,30 @@ body {
     color: var(--ocean-pressed-state);
 }
 
-/* ---------------------- main ------------------------- */
+/* ======================== */
+/* --------- main --------- */
+/* ======================== */
+
 /* ----- section 1 ----- */
 .hero {
     background-color: var(--navy-blue-dark);
+    padding: 188px 0;
+    align-items: center;
 }
 
 .hero-header {
+    width: 496px;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white-background);
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 48px;
 }
 
 .hero-knock {
-    background-color: var(--iris-primary-brand);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -145,6 +195,7 @@ body {
     color: var(--white-background);
     width: 169px;
     height: 56px;
+    background-color: var(--iris-primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
@@ -201,8 +252,9 @@ body {
 
 }
 
-
-/* --------------- footer ---------------- */
+/* ======================== */
+/* -------- footer -------- */
+/* ======================== */
 .footer {
     background-color: var(--navy-blue-dark);
 }
@@ -216,8 +268,9 @@ body {
 }
 
 
-
-/* ---------- portfolio ----------- */
+/* ======================== */
+/* ------- portfolio ------ */
+/* ======================== */
 
 .portfolio-knock {
     font-family: "Roboto", sans-serif;
