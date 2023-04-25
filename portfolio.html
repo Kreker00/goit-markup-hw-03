@@ -16,37 +16,39 @@
   </head>
   <body>
     <!-- header -->
-    <header class="hat container">
-      <nav class="hat-nav">
-        <a href="./index.html" class="logo link">Web<span class="logo-hed">Studio</span></a>
-        <ul class="nav list">
-          <li><a class="main-nav link" href="./index.html">Studio</a></li>
-          <li><a class="main-nav link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="main-nav link" href="">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="contact">
-        <ul class="contact-list list">
-          <li>
-            <a class="contact-paragraph link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="contact-paragraph link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </address>
+    <header class="hat">
+      <div class="hat-box container">
+        <nav class="hat-nav">
+          <a href="./index.html" class="logo link">Web<span class="logo-hed">Studio</span></a>
+          <ul class="nav list">
+            <li><a class="main-nav link" href="./index.html">Studio</a></li>
+            <li><a class="main-nav link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="main-nav link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="contact">
+          <ul class="contact-list list">
+            <li>
+              <a class="contact-paragraph link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contact-paragraph link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <!-- main -->
     <main>
-      <section>
+      <section class="portfolio-main">
         <div class="container">
           <!-- скрыть -->
           <!-- cкритый заголовок (hidden-только длябот проверки) -->
           <h1 class="shadow" hidden>Portfolio</h1>
           <!-- Фильтор -->
-          <ul class="list">
+          <ul class="flex-gap24 list-port-button list">
             <li>
               <button type="button" class="portfolio-knock">All</button>
             </li>
@@ -64,7 +66,7 @@
             </li>
           </ul>
           <!-- элементы фильтра -->
-          <ul class="flex-gap24 list">
+          <ul class="portfolio-projects list">
             <li class="projects-item">
               <a href="" class="link">
                 <img
@@ -73,8 +75,10 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="projects-hed">Banking App Interface Concept</h2>
-                <p class="projects-text">App</p>
+                <div class="box-projects-text">
+                  <h2 class="projects-had">Banking App Interface Concept</h2>
+                  <p class="projects-text">App</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -85,8 +89,10 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="projects-hed">Cashless Payment</h2>
-                <p class="projects-text">Marketing</p>
+                <div class="box-projects-text">
+                  <h2 class="projects-had">Cashless Payment</h2>
+                  <p class="projects-text">Marketing</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -97,8 +103,10 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="projects-hed">Meditation App</h2>
-                <p class="projects-text">App</p>
+                <div class="box-projects-text">
+                  <h2 class="projects-had">Meditation App</h2>
+                  <p class="projects-text">App</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -109,8 +117,10 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="projects-hed">Taxi Service</h2>
-                <p class="projects-text">Marketing</p>
+                <div class="box-projects-text">
+                  <h2 class="projects-had">Taxi Service</h2>
+                  <p class="projects-text">Marketing</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -121,8 +131,10 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="projects-hed">Screen Illustrations</h2>
-                <p class="projects-text">Design</p>
+                <div class="box-projects-text">
+                  <h2 class="projects-had">Screen Illustrations</h2>
+                  <p class="projects-text">Design</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -133,8 +145,10 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="projects-hed">Online Courses</h2>
-                <p class="projects-text">Marketing</p>
+                <div class="box-projects-text">
+                  <h2 class="projects-had">Online Courses</h2>
+                  <p class="projects-text">Marketing</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -145,8 +159,10 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="projects-hed">Instagram Stories Concept</h2>
-                <p class="projects-text">Design</p>
+                <div class="box-projects-text">
+                  <h2 class="projects-had">Instagram Stories Concept</h2>
+                  <p class="projects-text">Design</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -157,8 +173,10 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="projects-hed">Organic Food</h2>
-                <p class="projects-text">Web Site</p>
+                <div class="box-projects-text">
+                  <h2 class="projects-had">Organic Food</h2>
+                  <p class="projects-text">Web Site</p>
+                </div>
               </a>
             </li>
             <li class="projects-item">
@@ -169,8 +187,10 @@
                   width="360"
                   height="300"
                 />
-                <h2 class="projects-hed">Fresh Coffee</h2>
-                <p class="projects-text">Web Site</p>
+                <div class="box-projects-text">
+                  <h2 class="projects-had">Fresh Coffee</h2>
+                  <p class="projects-text">Web Site</p>
+                </div>
               </a>
             </li>
           </ul>

@@ -104,6 +104,9 @@ body {
 
 .hat{
     border-bottom: 1px solid var(--cornflower-accent);
+}
+
+.hat-box {
     padding-top: 24px;
     padding-bottom: 24px;
     display: flex;
@@ -150,7 +153,6 @@ body {
 .contact {
     margin-left: 332px;
     font-style: normal;
-
 }
 
 .contact-list {
@@ -193,8 +195,6 @@ body {
 }
 
 .hero-knock {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -204,6 +204,11 @@ body {
     background-color: var(--iris-primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-knock:hover,
@@ -292,6 +297,20 @@ body {
 /* ------- portfolio ------ */
 /* ======================== */
 
+/* ======================== */
+/* -------- button -------- */
+/* ======================== */
+
+.portfolio-main {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.list-port-button {
+    justify-content: center;
+    margin-bottom: 72px;
+}
+
 .portfolio-knock {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
@@ -305,22 +324,52 @@ body {
     border-radius: 4px;
 }
 
-.projects-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--slate-text);
-}
-
 .portfolio-knock:hover,
 .portfolio-knock:focus {
     color: var(--white-background);
     background-color: var(--ocean-pressed-state);
     border: 1px solid var(--ocean-pressed-state);
 }
-/* элементы фильтра */
+
+/* ======================== */
+/* --- элементы фильтра --- */
+/* ======================== */
+.portfolio-projects {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
+}
+
 .projects-item {
+    box-sizing: content-box;
+    display: inline-block;
     width: 360px;
     height: 420px;
+}
+
+.box-projects-text { 
+    width: 360px;
+    height: 120px;
+    display: flex;
+    padding-left: 16px;
+    flex-direction: column;
     border: 1px solid #E7E9FC;
+    justify-content: center;
+}
+
+.projects-had {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 0.83;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue-dark);
+    margin-bottom: 8px;
+}
+
+.projects-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate-text);
 }
