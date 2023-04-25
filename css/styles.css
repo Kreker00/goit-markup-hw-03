@@ -36,8 +36,8 @@ button {
 .container {
     width: 1158px;
     margin: 0 auto;    
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0 15px;
+
 }
 
 .section {
@@ -106,8 +106,7 @@ body {
 }
 
 .hat-box {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    height: 72px;;
     display: flex;
 }
 
@@ -163,11 +162,14 @@ body {
 }
 
 .contact-paragraph {
+    display: flex;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--slate-text);
 }
+
 .contact-paragraph:hover,
 .contact-paragraph:focus {
     color: var(--ocean-pressed-state);
@@ -197,7 +199,6 @@ body {
 }
 
 .hero-knock {
-    display: block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
@@ -208,7 +209,7 @@ body {
     background-color: var(--iris-primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     margin-left: auto;
