@@ -46,7 +46,7 @@ button {
 }
 
 
-.alignment-gap24 {
+.alignment-gap {
     display: flex;
     gap: 24px;
 }
