@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
+    <link rel="stylesheet" href="./css/modern-normalize.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -50,33 +50,33 @@
         </div>
       </section>
       <!-- section 2 -->
-      <section>
-        <div class="container section">
+      <section class="section">
+        <div class="container">
           <!-- cкритый заголовок (hidden-только длябот проверки) -->
           <h2 class="shadow" hidden>Features</h2>
-          <ul class="flex-gap24 list">
-            <li>
+          <ul class="alignment-gap24 list">
+            <li class="feature">
               <h3 class="feature-head">Strategy</h3>
               <p class="feature-text">
                 Our goal is to identify the business problem to walk away with the perfect and
                 creative solution.
               </p>
             </li>
-            <li>
+            <li class="feature">
               <h3 class="feature-head">Punctuality</h3>
               <p class="feature-text">
                 Bring the key message to the brand's audience for the best price within the shortest
                 possible time.
               </p>
             </li>
-            <li>
+            <li class="feature">
               <h3 class="feature-head">Diligence</h3>
               <p class="feature-text">
                 Research and confirm brands that present the strongest digital growth opportunities
                 and minimize risk.
               </p>
             </li>
-            <li>
+            <li class="feature">
               <h3 class="feature-head">Technologies</h3>
               <p class="feature-text">
                 Design practice focused on digital experiences. We bring forth a deep passion for
@@ -87,13 +87,17 @@
         </div>
       </section>
       <!-- section 3 -->
-      <section>
-        <div class="container section-bottom">
+      <section class="section-bottom">
+        <div class="container">
           <h2 class="demonstration">What are we doing</h2>
-          <ul class="flex-gap24 list">
-            <li><img src="./images/What_are_we_doing/img1.jpg" alt="site on pc" width="360" /></li>
-            <li><img src="./images/What_are_we_doing/img2.jpg" alt="messengers" width="360" /></li>
-            <li>
+          <ul class="alignment-gap24 list">
+            <li class="element-demonstration"
+              ><img src="./images/What_are_we_doing/img1.jpg" alt="site on pc" width="360"
+            /></li>
+            <li class="element-demonstration"
+              ><img src="./images/What_are_we_doing/img2.jpg" alt="messengers" width="360"
+            /></li>
+            <li class="element-demonstration">
               <img
                 src="./images/What_are_we_doing/img3.jpg"
                 alt="website on smartphone"
@@ -104,10 +108,10 @@
         </div>
       </section>
       <!-- section 4 -->
-      <section class="team">
-        <div class="container section">
+      <section class="team section">
+        <div class="container">
           <h2 class="demonstration">Our Team</h2>
-          <ul class="flex-gap24 list">
+          <ul class="alignment-gap24 list">
             <li class="team-employee">
               <img
                 src="./images/Our_Team/MarkGuerrero.jpg"
@@ -116,8 +120,8 @@
                 height="260"
               />
               <div class="team-employee-text">
-                <h3>Mark Guerrero</h3>
-                <p>Product Designer</p>
+                <h3 class="employee-had">Mark Guerrero</h3>
+                <p class="employee-text">Product Designer</p>
               </div>
             </li>
             <li class="team-employee">
@@ -128,8 +132,8 @@
                 height="260"
               />
               <div class="team-employee-text">
-                <h3>Tom Ford</h3>
-                <p>Frontend Developer</p>
+                <h3 class="employee-had">Tom Ford</h3>
+                <p class="employee-text">Frontend Developer</p>
               </div>
             </li>
             <li class="team-employee">
@@ -140,8 +144,8 @@
                 height="260"
               />
               <div class="team-employee-text">
-                <h3>Camila Garcia</h3>
-                <p>Marketing</p>
+                <h3 class="employee-had">Camila Garcia</h3>
+                <p class="employee-text">Marketing</p>
               </div>
             </li>
             <li class="team-employee">
@@ -152,8 +156,8 @@
                 height="260"
               />
               <div class="team-employee-text">
-                <h3>Daniel Wilson</h3>
-                <p>UI Designer</p>
+                <h3 class="employee-had">Daniel Wilson</h3>
+                <p class="employee-text">UI Designer</p>
               </div>
             </li>
           </ul>
@@ -163,7 +167,9 @@
     <!-- footer -->
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo link">Web<span class="logo-foot">Studio</span></a>
+        <a href="./index.html" class="logo placing-logo link"
+          >Web<span class="logo-foot">Studio</span></a
+        >
         <p class="footer-text">
           Increase the flow of customers and sales for your business with digital marketing & growth
           solutions.

@@ -36,18 +36,17 @@ button {
 .container {
     width: 1158px;
     margin: 0 auto;    
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.section-bottom {
-    padding-bottom: 120px;
-}
 
-.flex-gap24 {
+
+.alignment-gap24 {
     display: flex;
     gap: 24px;
 }
@@ -114,6 +113,7 @@ body {
 
 .hat-nav{
     display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -124,6 +124,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--iris-primary-brand);
+    margin-right: 76px;
 }
 
 .logo-hed {
@@ -134,10 +135,11 @@ body {
     display: flex;
     padding: 0px;
     gap: 40px;
-    margin-left: 76px;
 }
 
 .main-nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -183,7 +185,7 @@ body {
 }
 
 .hero-header {
-    width: 496px;
+    max-width: 496px;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -195,12 +197,14 @@ body {
 }
 
 .hero-knock {
+    display: block;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--white-background);
-    width: 169px;
+    min-width: 169px;
     height: 56px;
+    border: none;
     background-color: var(--iris-primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
@@ -219,10 +223,8 @@ body {
 /* ----- section 2 ----- */
 
 /* .team-employee-head - (h3 из сектора 4) */
-/* .projects-hed - (h2 из portfolio) */
 .feature-head,
-.team-employee-head,
-.projects-hed {
+.team-employee-head {
     font-weight: 500; 
     font-size: 20px;
     line-height: 1.2;
@@ -230,12 +232,22 @@ body {
     color: var(--navy-blue-dark);
 }
 
+.feature {
+    width: calc((100% - 72px) / 4);
+}
+
+.feature-head {
+    margin-bottom: 8px;
+}
+
 .feature-text {
-    margin-top: 8px;
     color: var(--slate-text);
 }
  
 /* ----- section 3 ----- */
+.section-bottom {
+    padding-bottom: 120px;
+}
 
 .demonstration {
     font-size: 36px;
@@ -245,6 +257,10 @@ body {
     text-transform: capitalize;
     color: var(--navy-blue-dark);
     margin-bottom: 72px;
+}
+
+.element-demonstration {
+    width: calc((100% - 48px) / 3);
 }
 
 /* ----- section 4 ----- */
@@ -258,21 +274,23 @@ body {
     background-color: var(--white-background);
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 32px;
-    gap: 32px;
 }
 
 .team-employee-text {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    padding: 32px 16px;
 }
 
+.employee-had {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.employee-text {
+    text-align: center;
+}
 /* ======================== */
 /* -------- footer -------- */
 /* ======================== */
@@ -286,10 +304,14 @@ body {
     color: var(--cloud-light);
 }
 
+.placing-logo {
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
 .footer-text {
     width: 264px;
     color: var(--cloud-light);
-    margin-top: 16px;
 }
 
 
@@ -307,7 +329,9 @@ body {
 }
 
 .list-port-button {
+    display: flex;
     justify-content: center;
+    gap: 24px;
     margin-bottom: 72px;
 }
 
@@ -320,6 +344,7 @@ body {
     color: var(--iris-primary-brand);
     background-color: var(--cloud-light);
     text-align: center;
+    padding: 12px 24px;
     border: 1px solid var(--cornflower-accent);
     border-radius: 4px;
 }
@@ -328,7 +353,7 @@ body {
 .portfolio-knock:focus {
     color: var(--white-background);
     background-color: var(--ocean-pressed-state);
-    border: 1px solid var(--ocean-pressed-state);
+    border: 1px solid transparent;
 }
 
 /* ======================== */
@@ -337,8 +362,8 @@ body {
 .portfolio-projects {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 48px;
     column-gap: 24px;
+    row-gap: 48px;
 }
 
 .projects-item {
@@ -352,10 +377,12 @@ body {
     width: 360px;
     height: 120px;
     display: flex;
-    padding-left: 16px;
     flex-direction: column;
+    padding: 32px 16px;
     border: 1px solid #E7E9FC;
+    border-top: none;
     justify-content: center;
+    
 }
 
 .projects-had {
